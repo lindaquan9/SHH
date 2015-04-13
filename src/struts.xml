@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<!-- struts-default对应struts2-core的jar包的struts-default.xml文件的package name="struts-default" -->
+	<package name="Product" extends="struts-default" namespace="/">
+	
+		<!-- 
+			配置一个action:一个请求就是一个action
+			name为请求名，不含扩展名（namespace）
+			class默认com.opensymphony.xwork2.ActionSupport
+			method默认execute
+			result默认success
+		 -->
+		<!-- 默认配置
+			<action name="input" class="com.opensymphony.xwork2.ActionSupport" method="execute">
+				<result name="success" type="dispatcher">/WEB-INF/pages/input.jsp</result>
+			</action>
+		 -->
+		<action name="input">
+			<!-- 
+				result可以有多个 
+				namel默认success
+				type对应struts-default.xml下的result-type;dispatcher指转发
+			-->
+			<result>/WEB-INF/pages/input.jsp</result>
+		</action>
+		
+		<action name="product-save" class="com.action.productAction" method="save">
+			<result name="details">/WEB-INF/pages/details.jsp</result>
+		</action>
+	
+	</package>
+	
+</struts>
