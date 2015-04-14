@@ -1,3 +1,4 @@
+<%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -10,5 +11,15 @@
 	Just Test
 	
 	<a href="input.action">click here</a>
+	<br/><br/>
+	
+	<a href="testActionContext.action?name=context">Context Test Jsp</a>
+	
+	
+	<%
+		if(application.getAttribute("date") == null)
+			application.setAttribute("date", new Date());
+	%>
+	
 </body>
 </html>

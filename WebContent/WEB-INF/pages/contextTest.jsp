@@ -4,17 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Product Details</title>
+<title>Context Test Jsp</title>
 </head>
 <body>
 
-	<br>
-	Name: ${nameString}
+	<h4>Application Context Test</h4>
 	
-	<br>
-	ID: ${idString}
+	application: ${applicationScope.applicationKey}
 	
-	<br>
-	Description: ${descString}
 </body>
 </html>

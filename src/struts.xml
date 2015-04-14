@@ -8,6 +8,10 @@
 	<!-- struts-default对应struts2-core的jar包的struts-default.xml文件的package name="struts-default" -->
 	<package name="Product" extends="struts-default" namespace="/">
 	
+		<action name="testActionContext" class="com.action.TestActionContextAction" >
+			<result>/WEB-INF/pages/contextTest.jsp</result>
+		</action>
+	
 		<!-- 
 			配置一个action:一个请求就是一个action
 			name为请求名，不含扩展名（namespace）
