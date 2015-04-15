@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Just Test</title>
 </head>
 <body>
 	Just Test
@@ -14,6 +14,12 @@
 	<br/><br/>
 	
 	<a href="testActionContext.action?name=context">Context Test Jsp</a>
+	<br/><br/>
+	
+	<a href="testAwareAction.action?name=aware">Aware Test Jsp</a>
+	<br/><br/>
+	
+	<a href="login-ui">LoginUI</a>
 	
 	
 	<%

@@ -5,11 +5,30 @@
 
 <struts>
 
+	<!-- 配置请求的扩展名  struts2-core jar包中org.apache.struts2 的default.properties常量配置 -->
+	<constant name="struts.action.extension" value="action,do,"></constant>
+	
 	<!-- struts-default对应struts2-core的jar包的struts-default.xml文件的package name="struts-default" -->
 	<package name="Product" extends="struts-default" namespace="/">
 	
+		<action name="login-ui">
+			<result>/WEB-INF/pages/login.jsp</result>
+		</action>
+		
+		<action name="user-login" class="com.action.UserAction" method="login">
+			<result name="login-success">/WEB-INF/pages/login-success.jsp</result>
+		</action>
+		
+		<action name="user-logout" class="com.action.UserAction" method="logout">
+			<result name="logout-success">/WEB-INF/pages/logout-success.jsp</result>
+		</action>
+	
 		<action name="testActionContext" class="com.action.TestActionContextAction" >
 			<result>/WEB-INF/pages/contextTest.jsp</result>
+		</action>
+		
+		<action name="testAwareAction" class="com.action.TestAwareAcion" >
+			<result>/WEB-INF/pages/awareTest.jsp</result>
 		</action>
 	
 		<!-- 

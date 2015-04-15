@@ -4,17 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Context Test Jsp</title>
+<title>Aware Test Jsp</title>
 </head>
 <body>
 
-	<h4>Application Context Test</h4>
+	<h4>Aware Test</h4>
 	
-	application: ${applicationScope.applicationKey}
+	application: ${applicationScope.applicationKey2}
 	<br/><br/>
-	session: ${sessionScope.sessionKey}
+	session: ${sessionScope.sessionKey2}
 	<br/><br/>
-	request: ${requestScope.requestKey}
+	request: ${requestScope.requestKey2}
 	<br/><br/>
 	params: ${parameters.name[0]}
 	
