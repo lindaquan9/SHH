@@ -58,5 +58,12 @@ public class productAction {
 	public String save(){
 		return "details";
 	}
+	
+	public String testTag(){
+		this.descString = "testkkk";
+		this.idString = "xxxxx";
+		this.nameString = "wuwu";
+		return "success";
+	}
 
 }

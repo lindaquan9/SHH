@@ -20,6 +20,10 @@
 	<br/><br/>
 	
 	<a href="login-ui">LoginUI</a>
+	<br/><br/>
+	
+	<a href="test-tags">Tags Test Jsp</a>
+	<br/><br/>
 	
 	
 	<%

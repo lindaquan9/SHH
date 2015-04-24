@@ -11,6 +11,10 @@
 	<!-- struts-default对应struts2-core的jar包的struts-default.xml文件的package name="struts-default" -->
 	<package name="Product" extends="struts-default" namespace="/">
 	
+		<action name="test-tags" class="com.action.productAction" method="testTag">
+			<result>/WEB-INF/pages/tag/common-tag.jsp</result>
+		</action>
+	
 		<action name="login-ui">
 			<result>/WEB-INF/pages/login.jsp</result>
 		</action>
